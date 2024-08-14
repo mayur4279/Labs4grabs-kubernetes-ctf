@@ -1,6 +1,6 @@
 ## Walkthrough   
 
-### problem statement  
+### Problem statement  
 Make sure green deployment replicas in **green-ns** namespace only run on its designated green node, not on the **controlplane or red nodes**. </br> 
 Additionally, you need to **create deployment red in red-ns namespace with five replicas**, _using stefanroman/kube-labs:sleep-app_ image. </br>
 Deployment **red** should only run on **red node**. Additionally, the red node should exclusively run the red deployment and **reject any other workloads**. </br>   
@@ -11,7 +11,7 @@ Deployment **red** should only run on **red node**. Additionally, the red node s
 
 ---
 
-### challenge-1) Make sure green deployment replicas in green-ns namespace only run on its designated green node, not on the controlplane or red nodes.   
+### Challenge-1) Make sure green deployment replicas in green-ns namespace only run on its designated green node, not on the controlplane or red nodes.   
 The green node is already tented thats why we cannot add pods inside the node green, in this case **we need to untaint the node green**
 
 __Tainted poc__
@@ -38,7 +38,7 @@ Successfully added all pods inside the green node using
 
 ---  
 
-### challenge-2) Additionally, you need to create deployment red in red-ns namespace with five replicas, using stefanroman/kube-labs:sleep-app image.   
+### Challenge-2) Additionally, you need to create deployment red in red-ns namespace with five replicas, using stefanroman/kube-labs:sleep-app image.   
 
 __creating new namespace__  
 ```
@@ -114,7 +114,7 @@ __result__
 
 ---   
 
-### challenge-3) Deployment red should only run on red node. Additionally, the red node should exclusively run the red deployment and reject any other workloads.
+### Challenge-3) Deployment red should only run on red node. Additionally, the red node should exclusively run the red deployment and reject any other workloads.
 
 __we need to assign any taint to the red node to prevent other workloads from being scheduled on it.__   
 
