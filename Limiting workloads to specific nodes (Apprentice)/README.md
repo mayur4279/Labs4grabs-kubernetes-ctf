@@ -97,7 +97,7 @@ spec:
 ```  
 
 ```bash
-kubectl apply -f red-deployment.yaml
+kubectl apply -f red-deployment.yaml  -n red-ns  
 ```  
 
 __make sure to assign label to the red node__  
