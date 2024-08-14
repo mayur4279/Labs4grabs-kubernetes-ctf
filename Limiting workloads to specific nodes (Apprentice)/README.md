@@ -105,6 +105,23 @@ __make sure to assign label to the red node__
 ```
 kubectl label nodes red  worker=red
 ```
+__result__ 
+
+![image](https://github.com/user-attachments/assets/8b6f910b-2f7a-4acb-9e41-38fcea1ba4bf)  
+
+### challenge-3) Deployment red should only run on red node. Additionally, the red node should exclusively run the red deployment and reject any other workloads.
+
+__we need to assign any taint to the red node to prevent other workloads from being scheduled on it.__   
+
+```bash
+kubectl taint nodes red key=value:NoSchedule
+```
+
+__Final Submition Boooooom__    
+
+![image](https://github.com/user-attachments/assets/87178935-8feb-4ea9-9606-6ac6a2a0b6d2)
+
+
 
 
 
