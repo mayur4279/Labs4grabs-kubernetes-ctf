@@ -1,2 +1,2 @@
-# Labs4grabs-kubernetes-ctf--challenges
+# Labs4grabs-kubernetes-ctf
 This repo consists of walkthrough of kubernetes ctf's , which is available of labs4grabs website...
