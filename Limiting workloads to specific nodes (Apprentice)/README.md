@@ -14,9 +14,11 @@ Deployment **red** should only run on **red node**. Additionally, the red node s
 The green node is already tented thats why we cannot add pods inside the node green, in this case **we need to untaint the node green**
 
 __Tainted poc__
+
 ![image](https://github.com/user-attachments/assets/93a661b4-6217-4cf7-818c-c3f63f4e77c1)  
 
 __untainted screenshot__  
+
 ![image](https://github.com/user-attachments/assets/94ba9528-3ab5-4b53-a95f-77ec030f5ea2)   
 
 __adding node selector in deployment in green-ns__   
