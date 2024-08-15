@@ -4,7 +4,8 @@
 
 ## lab-1) Limiting workloads to specific nodes (Apprentice)   
 - What is nodeSelector??  
-  nodeselector helps kube-schedular to understand which pod has to schedule on which node.
+  nodeselector helps kube-schedular to understand which pod has to schedule on which node. <br>
+  nodeSelector is a hard match method.  
   
 ```yaml
 nodeSelector:
