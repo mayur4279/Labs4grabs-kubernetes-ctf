@@ -150,7 +150,7 @@ __Challenge-1) Running content of /usr/local/apache2/conf/httpd.conf file from c
 
 **why we are doing this??**
 - **Because, we have two containers in one Pod where nginx and httpd services by default run on port 80.**
-- **to avoid this conflict we need to edit httpd.conf file to run httpd server on any port (81 is used here).**
+- **to avoid this conflict we need to edit httpd.conf file to run httpd server on any port (8080 is used here).**
   
 Create httpd pod for getting deafult configurtion.  
 
